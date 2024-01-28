@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="utf-8">
+    <title>Session</title>
+</head>
+<body>
+    <h1>Landing page for website</h1>
+    <p>
+        Random session id (---session-id---) is embedded into internal links and forms. Reload the page to create a new
+        session id.
+    </p>
+    <p>
+        <a href="display?session-id=---session-id---">One internal link</a>
+    </p>
+    <p>
+        <a href="display?session-id=---session-id---">One more internal link</a>
+    </p>
+    <p>
+        <a href="https://hackertyper.com/">One external link</a>
+    </p>
+
+    <h2>A form:</h2>
+    <form method="get" action="display">
+        <p>
+            Name: <input type="text" name="name">
+        </p>
+        <p>
+            <input type="hidden" name="session-id" value="---session-id---">
+            <input type="submit" value="Send" name="send-button">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Attachment Servlet</title>
+</head>
+<body>
+    <form method="post" action="emailAttachmentServlet" enctype="multipart/form-data">
+        <p>
+            <input type="text" name="from" placeholder="From">
+        </p>
+        <p>
+            <input type="text" name="to" placeholder="To">
+        </p>
+        <p>
+            <input type="text" name="cc" placeholder="Cc">
+        </p>
+        <p>
+            <input type="text" name="bcc" placeholder="Bcc">
+        </p>
+        <p>
+            <input type="text" name="subject" placeholder="Subject">
+        </p>
+        <p>
+            <textarea name="message" rows="10" cols="25" placeholder="Message"></textarea>
+        </p>
+        <label for="file1">File 1:</label>
+        <input type="file" name="file1" id="file1">
+        <br>
+        <label for="file2">File 2:</label>
+        <input type="file" name="file2" id="file2">
+        <br>
+        <p>
+            <input type="submit" name="push_button" value="Send email">
+        </p>
+    </form>
+</body>
+</html>

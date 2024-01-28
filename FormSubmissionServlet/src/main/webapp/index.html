@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Submission Servlet</title>
+</head>
+<body>
+    <h1>Form Submission:</h1>
+    <form method="post" action="form-submission-servlet">
+        <div>
+            <input type="hidden" name="hidden" value="I am hidden!">
+        </div>
+        <p>
+            <label for="text-box">Text Box:</label>
+            <input type="text" id="text-box" name="text_box" value="ABC">
+        </p>
+        <p>
+            <label for="text-area">Text Area:</label>
+            <textarea id="text-area" name="text_area" rows="10" cols="10">DEF</textarea>
+        </p>
+        <p>
+            <label for="check-box">Check Box:</label>
+            <input type="checkbox" id="check-box" name="check_box" value="ON" checked="checked">
+        </p>
+        <p>
+            <label for="radio-button1">Radio Button 1:</label>
+            <input type="radio" id="radio-button1" value="v1" name="radio_button" checked="checked">
+            <label for="radio-button2">Radio Button 2:</label>
+            <input type="radio" id="radio-button2" value="v2" name="radio_button">
+        </p>
+        <p>
+            <label for="drop-down-menu">Drop Down Menu:</label>
+            <select id="drop-down-menu" name="drop_down_menu" size="1">
+                <option value="Value1">
+                    Value 1
+                </option>
+                <option value="Value2">
+                    Value 2
+                </option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Submit" name="submit_button">
+        </p>
+    </form>
+</body>
+</html>
